@@ -1,0 +1,53 @@
+{
+  "name": "@westh/influx",
+  "version": "1.0.0",
+  "description": "Very toit InfluxDB client that only supports inserts",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westh/influx.git"
+  },
+  "keywords": [
+    "influx",
+    "influxdb",
+    "toit"
+  ],
+  "author": "westh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/westh/influx/issues"
+  },
+  "homepage": "https://github.com/westh/influx#readme",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "node test.js",
+    "lint": "eslint --ignore-path .gitignore --fix .",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3"
+  }
+}
