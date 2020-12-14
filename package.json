@@ -1,8 +1,8 @@
 {
   "name": "@westh/influx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Very toit InfluxDB client that only supports inserts",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/westh/influx#readme",
   "scripts": {
-    "build": "babel index.js -d dist",
+    "build": "babel index.js -d lib",
     "test": "node test.js",
     "lint": "eslint --ignore-path .gitignore --fix .",
     "lint-staged": "lint-staged"
