@@ -2,7 +2,7 @@
 
 Insert data into InfluxDB.
 
-This code is stupid and tiny. Upside of that is that it is simple as it's *just* a wrapper of [InfluxDB's API](https://docs.influxdata.com/influxdb/v1.8/write_protocols/line_protocol_reference/).
+This code is stupid and tiny. Upside of that is that it is simple. It's basically *just* a wrapper of [InfluxDB's API](https://docs.influxdata.com/influxdb/v1.8/write_protocols/line_protocol_reference/).
 
 If you need something more capable check out [the official client](https://github.com/influxdata/influxdb-client-js).
 
