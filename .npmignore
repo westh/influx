@@ -1,4 +1,4 @@
-index.js
-test.js
-.babalrc
+/index.js
+/test.js
+.babelrc
 .eslintrc*
