@@ -23,8 +23,4 @@ function insert ({ measurementName, host, data }) {
   return influx.post('', `${measurementName},host=${host} ${fields}`)
 }
 
-async function insertSync ({ measurementName, host, data }) {
-  await insert({ measurementName, host, data })
-}
-
-export default { init, insert, insertSync }
+export default { init, insert }
