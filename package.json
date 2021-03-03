@@ -1,6 +1,6 @@
 {
   "name": "@westh/influx",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Very toit InfluxDB client that only supports inserts",
   "main": "./lib/index.js",
   "type": "module",

@@ -34,11 +34,15 @@ try {
       testFieldThree: 'could-also-be-a-string'
     }
   }
-  influx.insertSync(exampleData) // or await influx.insert(exampleData)
+  await influx.insert(exampleData)
 } catch (error) {
   console.error(error)
 }
 ```
+
+## Testing
+
+Before running `yarn test` you have to run `yarn build`, as the test script relies on the transpiled version.
 
 ## License
 
