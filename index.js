@@ -4,7 +4,11 @@ let influx = null
 
 function init ({ url, org, bucket, token }) {
   influx = axios.create({
-    baseURL: `${url}/api/v2/write?org=${org}&bucket=${bucket}`,
+    baseURL: `${url}/api/v2/write`,
+    params: {
+      org,
+      bucket
+    },
     headers: { Authorization: `Token ${token}` }
   })
 }
